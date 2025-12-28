@@ -1,0 +1,23 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "This folder is just to test multiple processes",
+  "main": "index.js",
+  "scripts": {
+    "check": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritik-Nagpure/tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ritik-Nagpure/tests/issues"
+  },
+  "homepage": "https://github.com/Ritik-Nagpure/tests#readme"
+}
