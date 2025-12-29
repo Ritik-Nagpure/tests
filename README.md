@@ -1,2 +1,2 @@
 # tests
-This folder is just to test multipl
+This folder is just to tes
