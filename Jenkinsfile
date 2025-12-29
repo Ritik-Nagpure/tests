@@ -6,6 +6,11 @@ pipeline {
                 deleteDir()
             }
         }
+        stage('Checkout') {
+            steps { 
+                checkout scm
+            }
+        }              
         stage('Build') {
             steps {
                 dir('tests') {
@@ -24,5 +29,3 @@ pipeline {
         }
     }
 }
-
-
