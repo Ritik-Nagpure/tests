@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        // stage('Checkout') { 
-        //     steps { 
-        //         git branch: 'main', url: 'https://github.com/Ritik-Nagpure/tests.git' 
-        //     } 
-        // }
+        stage('Checkout') { 
+            steps { 
+                git branch: 'beta', url: 'https://github.com/Ritik-Nagpure/tests.git' 
+            } 
+        }
         stage('Clean Up') {
             steps {
                 deleteDir()
