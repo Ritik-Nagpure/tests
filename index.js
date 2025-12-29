@@ -2,6 +2,7 @@
 console.log("🚀 Starting the console app...");
 console.log("Hello, world!");
 console.log("This is a simple JS console application running without any inputs.");
+console.log("Beta Branch");
 
 num = Math.ceil(Math.random() * 40)
 console.log(`${num} * ${num} = ${num * num}`);
