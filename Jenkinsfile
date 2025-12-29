@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    triggers {
+        githubPush()
+    }
+    stages {
+        stage('Clean Up') {
+            steps {
+                deleteDir()
+            }
+        }
+        stage('Clone Repo') {
+            steps {
+                sh 'git clone https://github.com/Ritik-Nagpure/tests.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('tests') {
+                    sh 'node -v'
+                    sh 'npm install'
+                    sh 'npm run build'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('tests') {
+                    sh 'npm run test'
+                }
+            }
+        }
+    }
+}
