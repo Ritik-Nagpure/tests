@@ -1,9 +1,11 @@
 pipeline {
     agent any
-    triggers {
-        githubPush()
-    }
     stages {
+        // stage('Checkout') { 
+        //     steps { 
+        //         git branch: 'main', url: 'https://github.com/Ritik-Nagpure/tests.git' 
+        //     } 
+        // }
         stage('Clean Up') {
             steps {
                 deleteDir()
