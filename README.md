@@ -1,2 +1,2 @@
 # tests
-This folder is just to tes
+This folder is just to
