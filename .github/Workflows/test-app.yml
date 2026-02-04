@@ -1,0 +1,26 @@
+name: test-node-app
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-app:
+    steps:
+      - name : Checkout Code
+        uses : actions/checkout@v3
+
+      - name : setup-Node
+        uses : actions/setup-node@v3
+        with :
+          node-version : '25'
+      
+      - name : install node dependencies
+        uses : npm install
+
+      - name : run index
+        run : node index.js
+
+      - name : run tests
+        run : node test.js
+
