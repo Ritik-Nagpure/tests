@@ -1,0 +1,31 @@
+name: test-node-app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-app:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '25'
+      
+      - name: Install Node Dependencies
+        run: npm install
+
+      - name: Run Index
+        run: node index.js
+
+      - name: Run Tests
+        run: node test.js
+
+      - name: Done
+        run: echo "completed"
