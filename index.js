@@ -5,6 +5,7 @@ logs += "Hello, world!\n";
 logs += "This is a simple JS console application running without any inputs.\n";
 
 let num = Math.ceil(Math.random() * 40);
+// gggyg
 logs += `${num} * ${num} = ${num * num}\n`;
 
 logs += `Table of ${num}\n`;

@@ -24,3 +24,6 @@ jobs:
       - name : run tests
         run : node test.js
 
+      - name : done
+        run : echo completed
+
