@@ -1,16 +1,17 @@
+let logs = "";
 
-console.log("🚀 Starting the console app...");
-console.log("Hello, world!");
-console.log("This is a simple JS console application running without any inputs.");
+logs += "🚀 Starting the console app...\n";
+logs += "Hello, world!\n";
+logs += "This is a simple JS console application running without any inputs.\n";
 
-num = Math.ceil(Math.random() * 40)
-console.log(`${num} * ${num} = ${num * num}`);
+let num = Math.ceil(Math.random() * 40);
+logs += `${num} * ${num} = ${num * num}\n`;
 
-console.log(`Table of ${num}`);
+logs += `Table of ${num}\n`;
 for (let i = 1; i < 11; i++) {
-    console.log(`${num} * ${i} = ${num * i}`);
+    logs += `${num} * ${i} = ${num * i}\n`;
 }
 
+logs += "✅ Program finished successfully.\n";
 
-
-console.log("✅ Program finished successfully.");
+console.log(logs);
